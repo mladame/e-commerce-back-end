@@ -10,7 +10,7 @@ class Product extends Model {}
 Product.init(
   {
     // product name, price, stock, category id, product id
-    product_id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -32,7 +32,7 @@ Product.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'category',
-        key: 'category_id',
+        key: 'id',
         unique: false
       }
     }
