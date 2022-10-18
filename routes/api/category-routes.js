@@ -19,12 +19,12 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/:category_id', async (req, res) => {
+router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findOne({
-      where: {category_id: req.params.category_id},
+      where: {id: req.params.id},
       include: {
         model: Product,
         attributes: ['product_name', 'price', 'stock', 'category_id']
