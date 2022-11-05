@@ -19,7 +19,7 @@ This back-end application is able to create, update, read, and delete products, 
 
 ## Installation
 
-To install, clone the repository to your desired location and add a suitable front-end. Once the repository is cloned, copy the code in db/schema.sql. Create a new database in MySql Workbench. Once created, use the command `node seeds` to seed your data. Then, open a new terminal and run the command `node server.js`, or simpley `node server` to start testing. 
+To install, clone the repository to your desired location and add a suitable front-end. Once the repository is cloned, copy the code in db/schema.sql. Create a new database in MySql Workbench. Once created, use the command `npm run seed` to seed your data. Then, open a new terminal and run the command `npm run start` to start testing. 
 
 ## Usage
 
