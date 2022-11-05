@@ -15,9 +15,7 @@ Category.init(
     },
     category_name: {
       type: DataTypes.STRING,
-      validate:{
-        allowNull: false,
-      }
+      allowNull: false,
     }
   },
   {
