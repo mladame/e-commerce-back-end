@@ -18,7 +18,9 @@ Product.init(
     },
     product_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      validate:{
+        allowNull: false,
+      }
     },
     price: {
       type: DataTypes.DECIMAL,
